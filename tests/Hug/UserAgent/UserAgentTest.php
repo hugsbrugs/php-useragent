@@ -42,7 +42,7 @@ final class UserAgentTest extends TestCase
     	$test = UserAgent::get_browser($this->ua_firefox_linux);
         $this->assertInternalType('array', $test);
         $this->assertEquals('Mozilla Firefox', $test['name']);
-        $this->assertEquals('Linux', $test['platform']);
+        $this->assertEquals('linux', $test['platform']);
     }
 
     /* ************************************************* */
