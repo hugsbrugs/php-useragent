@@ -46,7 +46,7 @@ $os = UserAgent::get_os($ua = null);
 ## Unit Tests
 
 ```
-composer exec phpunit
+phpunit --bootstrap vendor/autoload.php tests
 ```
 
 ## Author
