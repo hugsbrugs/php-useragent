@@ -27,7 +27,7 @@ final class UserAgentTest extends TestCase
     public function testCanGetBrowscap()
     {
         $test = UserAgent::get_browscap($this->ua_firefox_linux);
-        $this->assertInternalType('boolean', $test);
+        $this->assertIsBool($test);
     }
     
     /* ************************************************* */
@@ -40,7 +40,7 @@ final class UserAgentTest extends TestCase
     public function testCanGetBrowser()
     {
     	$test = UserAgent::get_browser($this->ua_firefox_linux);
-        $this->assertInternalType('array', $test);
+        $this->assertIsArray($test);
         $this->assertEquals('Mozilla Firefox', $test['name']);
         $this->assertEquals('linux', $test['platform']);
     }
@@ -55,7 +55,7 @@ final class UserAgentTest extends TestCase
     public function testCanGetBrowserName()
     {
     	$test = UserAgent::get_browser_name($this->ua_firefox_linux);
-        $this->assertInternalType('string', $test);
+        $this->assertIsString($test);
         $this->assertEquals('Firefox', $test);
     }
 
@@ -69,7 +69,7 @@ final class UserAgentTest extends TestCase
     public function testCanGetOs()
     {
     	$test = UserAgent::get_os($this->ua_firefox_linux);
-        $this->assertInternalType('string', $test);
+        $this->assertIsString($test);
         $this->assertEquals('Linux', $test);
     }
 
