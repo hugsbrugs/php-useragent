@@ -10,11 +10,19 @@
         }
     ],
     "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
     },
     "autoload":{
-    	"psr-4": {"Hug\\": "src/Hug/"}
+    	"psr-4": {
+            "Hug\\": "src/Hug/"
+        }
     },
     "autoload-dev": {
-        "psr-4": { "Hug\\Tests\\": "tests/Hug/" }
+        "psr-4": {
+            "Hug\\Tests\\": "tests/Hug/"
+        }
     }
 }
